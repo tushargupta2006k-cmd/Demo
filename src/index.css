@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6D4C41;
+  --color-primary-dark: #5D4037;
+  --color-primary-light: #8D6E63;
+  --color-primary-ultra-light: #EFEBE9;
+  --color-secondary: #D7CCC8;
+  --color-secondary-light: #F5F1EE;
+  --color-accent: #FFB300;
+  --color-accent-dark: #FFA000;
+  --color-accent-light: #FFCA28;
+  --color-bg-base: #FAF8F5;
+  --color-text-main: #2E2E2E;
+  --color-text-muted: #616161;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
+/* Image zoom and visual enhancement presets */
+.furniture-card-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.furniture-card:hover .furniture-card-img {
+  transform: scale(1.08);
+}

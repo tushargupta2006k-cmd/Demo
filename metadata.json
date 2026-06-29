@@ -1,0 +1,6 @@
+{
+  "name": "Sharma Furniture House",
+  "description": "Premium quality wooden, modular, and office furniture in Sirsa, Haryana. Custom designs and free delivery within 25 km.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
